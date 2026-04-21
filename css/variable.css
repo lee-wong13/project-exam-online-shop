@@ -44,9 +44,17 @@ h3 {
 }
 
 p,
-label,
 a {
   font-family: var(--secondary-font);
   color: var(--text-color);
   font-size: var(--paragraph);
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  font-family: var(--secondary-font);
+  font-size: var(--small-txt);
 }
