@@ -28,4 +28,25 @@ h2,
 h3 {
   font-family: var(--primary-font);
   line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+h1 {
+  font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
+}
+
+h3 {
+  font-size: var(--heading-3);
+}
+
+p,
+label,
+a {
+  font-family: var(--secondary-font);
+  color: var(--text-color);
+  font-size: var(--paragraph);
 }
