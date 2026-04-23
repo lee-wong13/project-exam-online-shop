@@ -2,12 +2,12 @@
 
 :root {
   /*colors*/
-  --primary-color: #312f2c;
-  --secondary-color: #424242;
-  --accent-color: #e50914;
+  --primary-color: #1a1a1b;
+  --secondary-color: #f8f9fa;
+  --accent-color: #c5a059;
 
-  --background-color: #312f2c;
-  --text-color: #fafafa;
+  --background-color: #f9fafb;
+  --text-color: #333333;
 
   /*fonts*/
   --primary-font: "Bebas Neue", sans-serif;
@@ -43,8 +43,7 @@ h3 {
   font-size: var(--heading-3);
 }
 
-p,
-a {
+p {
   font-family: var(--secondary-font);
   color: var(--text-color);
   font-size: var(--paragraph);
@@ -52,6 +51,7 @@ a {
 
 a {
   text-decoration: none;
+  font-family: var(--primary-font);
 }
 
 label {
