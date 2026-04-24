@@ -5,3 +5,134 @@
   margin: 0;
   padding: 0;
 }
+
+/* ------------ NAVIGATION ------------ */
+
+header {
+  background-color: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo a {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  font-size: var(--heading-1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+nav ul li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+  font-size: var(--heading-3);
+}
+
+nav ul li a:hover {
+  color: var(--accent-color);
+  transition: color 0.3s;
+}
+
+nav ul li a.active {
+  color: var(--accent-color);
+}
+
+.nav-right {
+  display: flex;
+  gap: 15px;
+}
+
+button {
+  border: none;
+  font-family: var(--primary-font);
+  font-size: var(--heading-3);
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+}
+
+.login-btn,
+.shop-sale-btn {
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.login-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border: 1px solid var(--accent-color);
+}
+.shop-sale-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border: 1px solid var(--accent-color);
+}
+
+.signup-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border: 1px solid var(--secondary-color);
+}
+
+.shop-now-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+.shop-now-btn:hover {
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  transition:
+    background-color 0.3s,
+    color 0.3s;
+  border: 1px solid var(--primary-color);
+}
+
+/* ------------ RESPONSIVE ------------ */
+
+/* ------------ FOOTER ------------ */
+
+footer {
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  padding: 40px 20px;
+}
+
+footer h1 {
+  color: var(--primary-color);
+}
+
+.footer-tagline,
+.footer-text,
+.payment-methods {
+  margin: 16px 0;
+}
+
+footer p {
+  font-family: var(--primary-font);
+  font-size: var(--heading-3);
+}
+
+/* ------------ MEDIA QUERIES ------------ */
