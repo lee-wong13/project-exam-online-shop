@@ -354,7 +354,64 @@
   }
 }
 
+@media screen and (max-width: 856px) {
+  .hero {
+    width: 100%;
+    padding: 0 20px 0 450px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+    padding: 0 20px 0 0;
+  }
+
+  .hero h1 {
+    font-size: var(--heading-2);
+  }
+
+  .hero p {
+    font-size: var(--paragraph);
+  }
+}
+
 @media (max-width: 640px) {
+  .hero {
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 155px;
+    height: 155px;
+    padding: 0 30px 0 20px;
+    background-position: left center;
+  }
+
+  .hero-content {
+    max-width: 250px;
+    margin-left: auto;
+    padding: 0;
+  }
+
+  .hero h1 {
+    font-size: 21px;
+    margin-bottom: 8px;
+  }
+
+  .hero p {
+    font-size: 12px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+
+  .hero-btns {
+    gap: 10px;
+  }
+
+  .hero-btns .shop-now-btn,
+  .hero-btns .shop-sale-btn {
+    width: 108px;
+    height: 38px;
+    font-size: 18px;
+  }
+
   .feature-products-grid {
     grid-template-columns: 1fr;
   }
