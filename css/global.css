@@ -59,6 +59,13 @@ nav ul li a:hover {
   font-family: var(--primary-font);
   font-size: var(--heading-3);
   white-space: nowrap;
+  cursor: pointer;
+}
+
+.user-greeting:hover,
+.nav-icon:hover {
+  color: var(--accent-color);
+  transition: color 0.3s;
 }
 
 button {

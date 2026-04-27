@@ -77,7 +77,17 @@ document.addEventListener("DOMContentLoaded", function () {
       navRight.innerHTML = `
         <span class="user-greeting">Hi, ${loggedInUser.fullname}</span>
         <span id="cart" class="nav-icon" title="Cart">Cart(0)</span>
+        <span id="logout" class="nav-icon" title="Logout">Logout</span>
       `;
+
+      const logoutBtn = document.getElementById("logout");
+      if (logoutBtn) {
+        logoutBtn.addEventListener("click", function () {
+          localStorage.removeItem("loggedInUser");
+          window.location.href = "index.html";
+          updateAuthHeader();
+        });
+      }
     }
   }
 
