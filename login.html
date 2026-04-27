@@ -28,201 +28,64 @@
       </nav>
 
       <nav class="nav-right">
-        <button class="signup-btn" id="signup-btn">SIGN UP</button>
-        <button class="login-btn" id="login-btn">LOG IN</button>
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = 'signup.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = 'login.html'"
+        >
+          LOG IN
+        </button>
       </nav>
     </header>
 
     <main>
-      <section class="hero">
-        <div class="hero-content">
-          <h1>A new Spectrum of Style</h1>
-          <p>
-            From high-performance audio to luxury fragrances.<br />
-            Discover the curated spectrum of Prism Shop
-          </p>
-          <div class="hero-btns">
-            <button class="shop-now-btn">Shop</button>
-            <button class="shop-sale-btn">Shop Sale</button>
+      <!-- Log In Form -->
+      <div class="login-form" id="login-form">
+        <h1>Welcome Back!</h1>
+        <p>please enter your details</p>
+        <form action="#" method="post" onsubmit="handleLogin(event)" novalidate>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email..." required />
+          <div id="emailError">
+            <p>! this email is already part of spectrum or invalid email</p>
           </div>
-        </div>
-      </section>
-
-      <section class="feature-sale" id="feature-sale">
-        <h1>flash sale</h1>
-        <div class="carousel-controls">
-          <button class="prev-btn" id="prev-btn">&#10094;</button>
-          <div class="carousel">
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn-2">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn-3">
-                  Add to Cart
-                </button>
-              </div>
-            </div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password..."
+            required
+          />
+          <div id="passwordError">
+            <p>! incorrect password</p>
           </div>
-          <button class="next-btn" id="next-btn">&#10095;</button>
-        </div>
-      </section>
+          <div class="checkbox-row">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
 
-      <section class="feature-products" id="feature-products">
-        <div class="feature-products-head">
-          <h1>categories</h1>
-          <nav class="categories-filter" aria-label="Product categories">
-            <a href="#" class="active">All</a>
-            <a href="#">Tech</a>
-            <a href="#">Beauty</a>
-            <a href="#">Clothes</a>
-          </nav>
-        </div>
-
-        <div class="feature-products-grid">
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-        </div>
-
-        <div class="feature-products-action">
-          <button class="shop-more-btn">Shop More...</button>
-        </div>
-      </section>
-
-      <section class="member">
-        <h1>Get 10% off of your first order when you register</h1>
-        <button class="member-btn" onclick="location.href = 'signup.html'">
-          Become Member
-        </button>
-      </section>
+          <button
+            type="submit"
+            class="signup-submit-btn"
+            id="signup-submit-btn"
+          >
+            Log In
+          </button>
+          <span class="terms">
+            don’t have an account?
+            <a onclick="location.href = 'signup.html'">Sign Up</a>
+          </span>
+        </form>
+      </div>
     </main>
-
-    <footer>
-      <h1>PRISM SHOP</h1>
-      <p class="footer-tagline">The full spectrum of modern living</p>
-      <p class="footer-text">
-        © 2024 PRISM SHOP. All rights reserved. <br />
-        contact: prismshop@email.com tel: +46 12 34 56 78
-      </p>
-      <p class="payment-methods">
-        payment methods: <br />
-        visa | mastercard | apple pay | google pay | paypal
-      </p>
-    </footer>
 
     <script src="js/scripts.js"></script>
   </body>

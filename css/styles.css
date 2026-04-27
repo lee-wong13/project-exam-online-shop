@@ -461,10 +461,89 @@
   color: var(--primary-color);
 }
 
+.signup-form input[type="checkbox"],
+.login-form input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--accent-color);
+  border: none;
+  vertical-align: middle;
+}
+
+.signup-form .checkbox-row,
+.login-form .checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 24px;
+}
+
+.signup-form .checkbox-row label,
+.login-form .checkbox-row label {
+  display: inline;
+  margin: 0;
+  font-size: 16px;
+  font-family: var(--secondary-font);
+  text-transform: none;
+  letter-spacing: 0;
+  line-height: 1.4;
+  color: var(--secondary-color);
+  cursor: pointer;
+  vertical-align: middle;
+  font-family: var(--primary-font);
+}
+
+.forgot-password {
+  margin-left: auto;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: 14px;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.3s;
+}
+
+.forgot-password:hover,
+.forgot-password:focus-visible {
+  color: var(--accent-color);
+}
+
 .signup-form input::placeholder,
 .login-form input::placeholder {
   font-family: var(--primary-font);
   color: #8d8e8f;
+}
+
+.signup-form input.error,
+.login-form input.error {
+  border: 2px solid #ea4141 !important;
+}
+
+#fullnameError,
+#emailError,
+#passwordError {
+  color: #e74c3c;
+  font-family: var(--secondary-font);
+  font-size: 13px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+#fullnameError p,
+#emailError p,
+#passwordError p {
+  margin: 0;
+  color: #ea4141;
+  font-family: var(--primary-font);
+  font-size: 13px;
+}
+
+#fullnameError.show,
+#emailError.show,
+#passwordError.show {
+  display: block;
 }
 
 .signup-form button,
@@ -505,6 +584,20 @@
 .signup-form span a:hover,
 .login-form span a:hover {
   color: #d8b36e;
+}
+
+@media screen and (max-width: 500px) {
+  .signup-form,
+  .login-form {
+    padding: 30px 40px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .signup-form button,
+  .login-form button {
+    font-size: 24px;
+  }
 }
 
 /* ------------- ABOUT PAGE AND CONTACT PAGE ------------- */
