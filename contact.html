@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | LOG IN</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          src="assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="#feature-products">CATEGORIES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = 'signup.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = 'login.html'"
+        >
+          LOG IN
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <div class="contact-container">
+        <h1>at your service</h1>
+        <h3>
+          Questions about the spectrum? Our team is here to provide clarity
+        </h3>
+        <p>email: concierge@prismshop.com</p>
+        <p>phone: +47 12 34 56 78</p>
+      </div>
+      <div class="contact-container">
+        <form action="" method="post">
+          <h1>Contact Form</h1>
+          <label for="name">Name:</label>
+          <input type="text" name="name" placeholder="Full Name..." required />
+          <label for="ordernumber">Order number:</label>
+          <input
+            type="number"
+            name="ordernumber"
+            placeholder="Order number..."
+            required
+          />
+          <label for="message">Message:</label>
+          <textarea
+            name="message"
+            placeholder="Your Message..."
+            rows="5"
+            required
+          ></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>

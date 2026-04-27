@@ -420,3 +420,235 @@
     justify-content: center;
   }
 }
+
+/* ------------ LOGIN & SIGNUP PAGE ------------ */
+
+.signup-form,
+.login-form {
+  max-width: 500px;
+  margin: 80px auto;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form p,
+.login-form p {
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  margin-bottom: 24px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.signup-form label,
+.login-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: var(--heading-3);
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+}
+
+.signup-form input,
+.login-form input {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #8a8a8a;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.signup-form input::placeholder,
+.login-form input::placeholder {
+  font-family: var(--primary-font);
+  color: #8d8e8f;
+}
+
+.signup-form button,
+.login-form button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.signup-form button:hover,
+.login-form button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  transition: background-color 0.3s;
+}
+
+.signup-form span,
+.login-form span {
+  display: block;
+  margin-top: 24px;
+  text-align: center;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+.signup-form span a,
+.login-form span a {
+  text-decoration: underline;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.signup-form span a:hover,
+.login-form span a:hover {
+  color: #d8b36e;
+}
+
+/* ------------- ABOUT PAGE AND CONTACT PAGE ------------- */
+
+.about-container,
+.contact-container {
+  max-width: 1110px;
+  margin: 80px auto;
+  padding: 50px 40px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  font-family: var(--primary-font);
+  line-height: var(--line-height);
+  letter-spacing: var(--letter-spacing);
+}
+
+.contact-container {
+  text-align: center;
+}
+
+.contact-container p {
+  font-size: var(--heading-3);
+  margin-bottom: 24px;
+  margin-top: 24px;
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+}
+
+.about-container h1,
+.contact-container h1 {
+  font-size: var(--heading-1);
+  text-transform: uppercase;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.about-container ul {
+  list-style-type: disc;
+  padding-left: 50px;
+}
+
+.about-container ul li {
+  margin-bottom: 12px;
+  font-size: var(--paragraph);
+}
+
+.about-container ul li strong {
+  color: var(--accent-color);
+}
+
+ul.values-list {
+  list-style-type: decimal;
+  padding-left: 50px;
+}
+
+.contact-container form {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  padding: 50px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: var(--heading-3);
+  text-transform: uppercase;
+  font-family: var(--primary-font);
+  text-align: left;
+}
+
+.contact-container form input,
+.contact-container form textarea {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #8a8a8a;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.contact-container form input::placeholder,
+.contact-container form textarea::placeholder {
+  font-family: var(--primary-font);
+  color: #8d8e8f;
+}
+
+.contact-container form button {
+  width: 100%;
+  height: 50px;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.contact-container form button:hover {
+  background-color: var(--primary-color);
+  color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  transition: background-color 0.3s;
+}
+
+@media screen and (max-width: 950px) {
+  .about-container,
+  .contact-container {
+    padding: 30px 20px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .about-container h1,
+  .contact-container h1 {
+    font-size: var(--heading-2);
+  }
+
+  .about-container ul li,
+  .contact-container p {
+    font-size: var(--paragraph);
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-container,
+  .contact-container {
+    padding: 30px 20px;
+    margin: 60px auto;
+    max-width: 80%;
+  }
+
+  .about-container h1,
+  .contact-container h1 {
+    font-size: var(--heading-2);
+  }
+
+  .about-container ul li,
+  .contact-container p {
+    font-size: var(--paragraph);
+  }
+
+  .contact-container form {
+    padding: 30px 20px;
+  }
+}
