@@ -68,6 +68,20 @@ document.addEventListener("DOMContentLoaded", function () {
       setMenuState(false);
     }
   });
+
+  // Update header based on login state
+  function updateAuthHeader() {
+    const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+
+    if (loggedInUser) {
+      navRight.innerHTML = `
+        <span class="user-greeting">Hi, ${loggedInUser.fullname}</span>
+        <span id="cart" class="nav-icon" title="Cart">Cart(0)</span>
+      `;
+    }
+  }
+
+  updateAuthHeader();
 });
 
 // ---------------- Javascript for log in and signup forms

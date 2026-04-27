@@ -43,13 +43,22 @@ nav ul li a:hover {
   transition: color 0.3s;
 }
 
-nav ul li a.active {
+#nav-list a.active {
   color: var(--accent-color);
 }
 
 .nav-right {
   display: flex;
   gap: 15px;
+  align-items: center;
+}
+
+.user-greeting,
+.nav-icon {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-size: var(--heading-3);
+  white-space: nowrap;
 }
 
 button {
