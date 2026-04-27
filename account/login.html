@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | LOG IN</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          src="assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="../index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="#feature-products">CATEGORIES</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = 'register.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = 'login.html'"
+        >
+          LOG IN
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Log In Form -->
+      <div class="login-form" id="login-form">
+        <h1>Welcome Back!</h1>
+        <p>please enter your details</p>
+        <form action="#" method="post" onsubmit="handleLogin(event)" novalidate>
+          <label for="email">Email:</label>
+          <input type="email" name="email" placeholder="Email..." required />
+          <div id="emailError">
+            <p>! this email is already part of spectrum or invalid email</p>
+          </div>
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="Password..."
+            required
+          />
+          <div id="passwordError">
+            <p>! incorrect password</p>
+          </div>
+          <div class="checkbox-row">
+            <input type="checkbox" name="remember" id="remember" />
+            <label for="remember">Remember me</label>
+            <a href="#" class="forgot-password">Forgot password?</a>
+          </div>
+
+          <button
+            type="submit"
+            class="signup-submit-btn"
+            id="signup-submit-btn"
+          >
+            Log In
+          </button>
+          <span class="terms">
+            don’t have an account?
+            <a onclick="location.href = 'register.html'">Sign Up</a>
+          </span>
+        </form>
+      </div>
+    </main>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
