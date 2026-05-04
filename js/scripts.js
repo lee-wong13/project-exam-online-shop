@@ -240,7 +240,7 @@ function handleLogin(event) {
   }
 
   localStorage.setItem("loggedInUser", JSON.stringify(matchedUser));
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 }
 
 // Pre-fill email if remember me was checked previously

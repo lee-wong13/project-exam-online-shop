@@ -58,3 +58,7 @@ label {
   font-family: var(--secondary-font);
   font-size: var(--small-txt);
 }
+
+main {
+  background-color: var(--background-color);
+}
