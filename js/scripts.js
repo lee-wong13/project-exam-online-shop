@@ -42,6 +42,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateActiveNav();
 
+  const basePath = hamburgerMenu.src.substring(
+    0,
+    hamburgerMenu.src.lastIndexOf("assets/icons/"),
+  );
+
   function setMenuState(isOpen) {
     siteHeader.classList.toggle("menu-open", isOpen);
     document.body.classList.toggle("menu-open", isOpen);
@@ -50,10 +55,11 @@ document.addEventListener("DOMContentLoaded", function () {
     navRight.classList.toggle("show", isOpen);
 
     if (isOpen) {
-      hamburgerMenu.src = "assets/icons/icons8-cross-50.png";
+      hamburgerMenu.src = basePath + "assets/icons/icons8-cross-50.png";
       hamburgerMenu.alt = "Close menu";
     } else {
-      hamburgerMenu.src = "assets/icons/icons8-hamburger-menu-50.png";
+      hamburgerMenu.src =
+        basePath + "assets/icons/icons8-hamburger-menu-50.png";
       hamburgerMenu.alt = "Open menu";
     }
   }
