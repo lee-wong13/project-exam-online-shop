@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | CHECKOUT</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          src="../assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="../index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="../index.html#feature-products">CATEGORIES</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = '../account/register.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = '../account/login.html'"
+        >
+          LOG IN
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="checkout-container">
+        <h1>CHECKOUT</h1>
+
+        <div class="checkout-layout">
+          <!-- LEFT: Form -->
+          <form class="checkout-form" id="checkout-form">
+            <div class="form-group">
+              <label for="email">EMAIL</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email..."
+                required
+              />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  id="first-name"
+                  name="firstName"
+                  placeholder="First name..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  id="last-name"
+                  name="lastName"
+                  placeholder="Last name..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="address">ADDRESS</label>
+              <input
+                type="text"
+                id="address"
+                name="address"
+                placeholder="Address..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="address2">APT, SUITE, FLOOR, ETC. (OPTIONAL)</label>
+              <input type="text" id="address2" name="address2" />
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="zip">ZIP CODE</label>
+                <input
+                  type="text"
+                  id="zip"
+                  name="zip"
+                  placeholder="Zip code..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="city">CITY</label>
+                <input
+                  type="text"
+                  id="city"
+                  name="city"
+                  placeholder="City..."
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">PHONE NUMBER</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="Phone number..."
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label>PAYMENT METHOD</label>
+              <div class="payment-options">
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="visa" required />
+                  <span>VISA</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="mastercard" />
+                  <span>MASTERCARD</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="applepay" />
+                  <span>APPLE PAY</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="googlepay" />
+                  <span>GOOGLE PAY</span>
+                </label>
+                <label class="payment-option">
+                  <input type="radio" name="payment" value="paypal" />
+                  <span>PAYPAL</span>
+                </label>
+              </div>
+            </div>
+
+            <button type="submit" class="complete-purchase-btn">
+              COMPLETE PURCHASE
+            </button>
+          </form>
+
+          <!-- RIGHT: Order summary -->
+          <div class="order-summary">
+            <h2>PRODUCT</h2>
+
+            <div class="summary-items" id="summary-items">
+              <div class="summary-item">
+                <span class="summary-item-name">PRODUCT NAME</span>
+                <span class="summary-item-qty">1</span>
+                <span class="summary-item-price">$100</span>
+              </div>
+            </div>
+
+            <div class="summary-subtotals">
+              <div class="summary-row">
+                <span>SUBTOTAL</span>
+                <span id="summary-subtotal">$100</span>
+              </div>
+              <div class="summary-row">
+                <span>TAX</span>
+                <span id="summary-tax">$55</span>
+              </div>
+            </div>
+
+            <div class="summary-total">
+              <span>TOTAL</span>
+              <span id="summary-total">$355</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>

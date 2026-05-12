@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | Product</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          src="../assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="../index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="../index.html#feature-products">CATEGORIES</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = '../account/register.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = '../account/login.html'"
+        >
+          LOG IN
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="product-detail-section">
+        <nav class="breadcrumb" id="breadcrumb" aria-label="breadcrumb">
+          <a href="../index.html">Home</a> /
+          <span id="breadcrumb-name">Product</span>
+        </nav>
+
+        <div class="product-detail-container" id="product-detail-container">
+          <p>Loading product...</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>PRISM SHOP</h1>
+      <p class="footer-tagline">The full spectrum of modern living</p>
+      <p class="footer-text">
+        © 2024 PRISM SHOP. All rights reserved. <br />
+        contact: prismshop@email.com tel: +46 12 34 56 78
+      </p>
+      <p class="payment-methods">
+        payment methods: <br />
+        visa | mastercard | apple pay | google pay | paypal
+      </p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+    <script src="../js/product.js"></script>
+  </body>
+</html>

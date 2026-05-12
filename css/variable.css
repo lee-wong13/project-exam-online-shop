@@ -59,6 +59,7 @@ label {
   font-size: var(--small-txt);
 }
 
-main {
+main,
+body {
   background-color: var(--background-color);
 }

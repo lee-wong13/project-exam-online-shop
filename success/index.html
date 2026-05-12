@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | ORDER SUCCESS</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="success-page">
+    <header>
+      <nav class="logo">
+        <img
+          src="../assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="../index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="../index.html#feature-products">CATEGORIES</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <form action="../account/register.html">
+          <button class="signup-btn" id="signup-btn" type="submit">
+            SIGN UP
+          </button>
+        </form>
+        <form action="../account/login.html">
+          <button class="login-btn" id="login-btn" type="submit">LOG IN</button>
+        </form>
+      </nav>
+    </header>
+
+    <main>
+      <section class="success-container">
+        <div class="success-confirmation" aria-live="polite">
+          <span class="success-icon" aria-hidden="true">&#10003;</span>
+          <h1>
+            THANK YOU, <span id="success-name">NAME</span>! YOUR ORDER IS IN THE
+            SPECTRUM
+          </h1>
+          <p>
+            WE'VE SENT A CONFIRMATION EMAIL TO
+            <span id="success-email">USER@EMAIL.COM</span>.
+          </p>
+          <p>ORDER <span id="success-order-number">#123456</span></p>
+        </div>
+
+        <article class="success-summary-card" aria-label="Order summary">
+          <h2>ORDER SUMMARY</h2>
+
+          <div class="success-items" id="success-items"></div>
+
+          <div class="success-totals">
+            <div class="success-total-row">
+              <span>TAX</span>
+              <span id="success-tax">$0.00</span>
+            </div>
+            <div class="success-total-row success-total-row-final">
+              <span>TOTAL</span>
+              <span id="success-total">$0.00</span>
+            </div>
+          </div>
+
+          <div class="success-shipping">
+            <h3>SHIPPING ADDRESS</h3>
+            <p id="success-address">ADDRESS</p>
+          </div>
+        </article>
+
+        <div class="success-actions">
+          <a class="continue-btn" href="../index.html"> CONTINUE EXPLORING </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>PRISM SHOP</h1>
+      <p class="footer-tagline">The full spectrum of modern living</p>
+      <p class="footer-text">
+        © 2026 PRISM SHOP. All rights reserved. <br />
+        contact: prismshop@mail.com tel: +47 12 34 56 78
+      </p>
+      <p class="payment-methods">
+        payment method <br />
+        visa | mastercard | apple pay | google pay | paypal
+      </p>
+    </footer>
+  </body>
+</html>

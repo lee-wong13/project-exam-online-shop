@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRISM SHOP | CART</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="logo">
+        <img
+          src="../assets/icons/icons8-hamburger-menu-50.png"
+          alt="responsive menu icon"
+          class="menu-icon"
+          id="hamburger-menu"
+        />
+        <a href="../index.html">PRISM SHOP</a>
+      </nav>
+
+      <nav class="nav-center">
+        <ul id="nav-list">
+          <li><a href="../index.html#feature-products">CATEGORIES</a></li>
+          <li><a href="../about.html">ABOUT</a></li>
+          <li><a href="../contact.html">Contact</a></li>
+          <li><a href="../index.html#feature-sale">SALE</a></li>
+        </ul>
+      </nav>
+
+      <nav class="nav-right">
+        <button
+          class="signup-btn"
+          id="signup-btn"
+          onclick="location.href = '../account/register.html'"
+        >
+          SIGN UP
+        </button>
+        <button
+          class="login-btn"
+          id="login-btn"
+          onclick="location.href = '../account/login.html'"
+        >
+          LOG IN
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="cart-container">
+        <h1>SHOPPING CART</h1>
+
+        <div class="cart-table">
+          <div class="cart-header">
+            <span class="col-product">PRODUCT</span>
+            <span class="col-price">PRICE</span>
+            <span class="col-quantity">QUANTITY</span>
+            <span class="col-total">TOTAL</span>
+          </div>
+
+          <div class="cart-items" id="cart-items">
+            <div class="cart-item">
+              <div class="cart-item-info">
+                <div class="cart-item-image"></div>
+                <span class="cart-item-name">PRODUCT NAME</span>
+              </div>
+              <span class="cart-item-price">$100</span>
+              <div class="cart-item-quantity">
+                <button class="qty-btn">−</button>
+                <input class="qty-value" type="text" value="0" readonly />
+                <button class="qty-btn">+</button>
+              </div>
+              <span class="cart-item-total">$100</span>
+            </div>
+          </div>
+
+          <div class="cart-subtotal">
+            <span class="subtotal-label">SUBTOTAL</span>
+            <span class="subtotal-amount" id="cart-subtotal">$300</span>
+          </div>
+
+          <div class="cart-actions">
+            <button
+              class="checkout-btn"
+              onclick="location.href = '../checkout/index.html'"
+            >
+              PROCEED TO CHECK OUT
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h1>PRISM SHOP</h1>
+      <p class="footer-tagline">The full spectrum of modern living</p>
+      <p class="footer-text">
+        © 2024 PRISM SHOP. All rights reserved. <br />
+        contact: prismshop@email.com tel: +46 12 34 56 78
+      </p>
+      <p class="payment-methods">
+        payment methods: <br />
+        visa | mastercard | apple pay | google pay | paypal
+      </p>
+    </footer>
+
+    <script src="../js/scripts.js"></script>
+  </body>
+</html>
