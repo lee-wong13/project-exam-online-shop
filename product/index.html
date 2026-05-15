@@ -53,7 +53,90 @@
         </nav>
 
         <div class="product-detail-container" id="product-detail-container">
-          <p>Loading product...</p>
+          <div class="product-detail" id="product-detail">
+            <div class="product-deteail-layout">
+              <div class="product-image-wrapper">
+                <img
+                  src="${imageUrl}"
+                  alt="${imageAlt}"
+                  class="product-detail-img"
+                  id="product-detail-img"
+                />
+              </div>
+
+              <div class="product-info">
+                <div class="product-title-row">
+                  <h1 class="product-detail-title" id="product-title">
+                    ${title}
+                  </h1>
+                  <p class="product-description" id="product-description">
+                    ${description}
+                  </p>
+                </div>
+
+                <div class="product-info-bottom-layout">
+                  <div>
+                    <p class="rating">rating: ${rating}/5 Reviews</p>
+                  </div>
+
+                  <div class="tags-sale">
+                    tag: <span class="product-tag">${tag}</span>
+                  </div>
+
+                  <div class="product-pricing">
+                    <div>
+                      <p class="original-price" id="product-original-price">
+                        ${hasDiscount ? `<span class="original-price"
+                          >$${price.toFixed(2)}</span
+                        >` : ""}
+                      </p>
+                    </div>
+                    <div>
+                      <p class="sale-price" id="product-sale-price">
+                        $${discountedPrice.toFixed(2)}
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="product-actions">
+                    <div class="quantity-selector">
+                      <button class="qty-btn" type="button" id="qty-decrease">
+                        -
+                      </button>
+                      <span id="qty-display">1</span>
+                      <button class="qty-btn" type="button" id="qty-increase">
+                        +
+                      </button>
+                    </div>
+                    <button
+                      class="product-add-btn"
+                      type="button"
+                      id="product-add-btn"
+                    >
+                      Add to Cart
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="top-line"></div>
+
+        <div class="review-content" id="review-content">
+          <h1 class="reviews-section-title">REVIEW (0)</h1>
+
+          <div class="review-card">
+            <div class="content-review">
+              <h2>NAME</h2>
+              <p>Description</p>
+            </div>
+
+            <div class="score">4/5</div>
+          </div>
         </div>
       </section>
     </main>
