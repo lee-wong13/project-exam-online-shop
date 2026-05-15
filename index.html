@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PRISM SHOP | HOME</title>
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   </head>
   <body>
     <header>
@@ -62,154 +64,60 @@
 
       <section class="feature-sale" id="feature-sale">
         <h1>flash sale</h1>
-        <div class="carousel-controls">
-          <button class="prev-btn" id="prev-btn">&#10094;</button>
-          <div class="carousel">
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn">
-                  Add to Cart
-                </button>
+        <div class="feature-sale-container">
+          <div class="swiper-button-prev"></div>
+          <div class="feature-sale-content swiper">
+            <div class="swiper-wrapper">
+              <div class="product-card swiper-slide">
+                <div class="product-image-placeholder" aria-hidden="true"></div>
+                <div class="product-card-info">
+                  <h2>Product Name</h2>
+                  <p><span>Sale Price</span><span>OG Price</span></p>
+                  <button class="add-to-cart-btn" id="add-to-cart-btn">
+                    Add to Cart
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn-2">
-                  Add to Cart
-                </button>
+
+              <div class="product-card swiper-slide">
+                <div class="product-image-placeholder" aria-hidden="true"></div>
+                <div class="product-card-info">
+                  <h2>Product Name</h2>
+                  <p><span>Sale Price</span><span>OG Price</span></p>
+                  <button class="add-to-cart-btn" id="add-to-cart-btn-2">
+                    Add to Cart
+                  </button>
+                </div>
               </div>
-            </div>
-            <div class="product-card">
-              <div class="product-image-placeholder" aria-hidden="true"></div>
-              <div class="product-card-info">
-                <h2>Product Name</h2>
-                <p><span>Sale Price</span><span>OG Price</span></p>
-                <button class="add-to-cart-btn" id="add-to-cart-btn-3">
-                  Add to Cart
-                </button>
+
+              <div class="product-card swiper-slide">
+                <div class="product-image-placeholder" aria-hidden="true"></div>
+                <div class="product-card-info">
+                  <h2>Product Name</h2>
+                  <p><span>Sale Price</span><span>OG Price</span></p>
+                  <button class="add-to-cart-btn" id="add-to-cart-btn-3">
+                    Add to Cart
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-          <button class="next-btn" id="next-btn">&#10095;</button>
+          <div class="swiper-button-next" id="next-btn"></div>
         </div>
       </section>
-
       <section class="feature-products" id="feature-products">
         <div class="feature-products-head">
           <h1>categories</h1>
           <nav class="categories-filter" aria-label="Product categories">
             <a href="#" class="active">All</a>
-            <a href="#">Tech</a>
-            <a href="#">Beauty</a>
-            <a href="#">Clothes</a>
+            <a href="#" id="tech">Tech</a>
+            <a href="#" id="beauty">Beauty</a>
+            <a href="#" id="clothes">Clothes</a>
           </nav>
         </div>
 
-        <div class="feature-products-grid">
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-          <article class="category-card">
-            <div class="category-image-placeholder" aria-hidden="true"></div>
-            <div class="category-card-info">
-              <h2>Product Name</h2>
-              <p>Sale Price</p>
-              <button class="add-to-cart-btn">Add to Cart</button>
-            </div>
-          </article>
-        </div>
-
+        <div class="feature-products-grid"></div>
+        <!-- Feature Product will run here -->
         <div class="feature-products-action">
           <button class="shop-more-btn">Shop More...</button>
         </div>
@@ -240,5 +148,7 @@
     </footer>
 
     <script src="js/scripts.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
   </body>
 </html>
