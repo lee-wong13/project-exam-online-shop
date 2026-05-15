@@ -206,7 +206,7 @@ function renderFeatureCategories(products) {
 
   const categoryCards = categoriesContainer.querySelectorAll(".category-card");
   categoryCards.forEach((card, index) => {
-    // เมื่อคลิกการ์ดสินค้าในหน้าหมวดหมู่ จะไปหน้ารายละเอียด
+    // when clicking the card, navigate to the product detail page with the product id in the query string
     card.addEventListener("click", () => {
       window.location.href = `product/index.html?id=${featuredProducts[index].id}`;
     });
