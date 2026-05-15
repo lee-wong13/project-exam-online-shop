@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (loggedInUser) {
       navRight.innerHTML = `
         <span class="user-greeting">Hi, ${loggedInUser.fullname}</span>
-        <span id="cart" class="nav-icon" title="Cart" onclick="location.href = '${basePath}cart/index.html'">Cart(${JSON.parse(localStorage.getItem("cart"))?.length || 0})</span>
+        <span id="cart" class="nav-icon" title="Cart" onclick="location.href = '${basePath}cart/index.html'">Cart(0)</span>
         <span id="logout" class="nav-icon" title="Logout">Logout</span>
       `;
 
