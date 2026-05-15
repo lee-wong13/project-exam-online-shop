@@ -42,3 +42,10 @@ AI LOG
 - Solved: The product is visible like how it should be, but I need to add function for loggedInUser for the add to cart button to be visible.
   ![loggedInUser](assets/img/stored-logged-in-user.png)
   ![loggedInUser](assets/img/stored-logged-in-user-2.png)
+
+  15.05.2026 23.10
+
+- Promt: Did I write it correctly for the cart on the header to navigate to cart page itself?
+  <span id="cart" class="nav-icon" title="Cart" onclick="location.href = '../cart/index.html'">Cart(0)</span>
+- Solved: It suggested that to use the basePath that it works for all pages
+  <span id="cart" class="nav-icon" title="Cart" onclick="location.href = '${basePath}cart/index.html'">Cart(0)</span>
